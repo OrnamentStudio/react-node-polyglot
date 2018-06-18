@@ -1,7 +1,7 @@
 {
   "name": "react-node-polyglot",
   "version": "0.0.0",
-  "description": "Nody polyglot react component",
+  "description": "Node polyglot react component",
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "NODE_ENV=production gulp lib:build",

@@ -1,5 +1,4 @@
-# form-kit
-React Form Components
+# Node polyglot react component
 
 ## License
 
