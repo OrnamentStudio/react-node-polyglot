@@ -1,0 +1,79 @@
+{
+  "name": "react-node-polyglot",
+  "version": "0.0.0",
+  "description": "Nody polyglot react component",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "NODE_ENV=production gulp lib:build",
+    "start": "gulp & node ./preview/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrnamentStudio/react-node-polyglot.git"
+  },
+  "keywords": [
+    "react",
+    "node-polyglot"
+  ],
+  "author": "Abylay Keldibek <atomio.ak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrnamentStudio/react-node-polyglot/issues"
+  },
+  "homepage": "https://github.com/OrnamentStudio/react-node-polyglot#readme",
+  "engines": {
+    "node": "^8.x.x"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.9.1",
+    "express": "4.16.3",
+    "livereload": "0.7.0",
+    "connect-livereload": "0.6.0",
+    "gulp": "3.9.1",
+    "gulp-watch": "5.0.0",
+    "gulp-babel": "7.0.1",
+    "run-sequence": "2.2.1",
+    "browserify": "16.2.2",
+    "browserify-incremental": "3.1.1",
+    "pump": "3.0.0",
+    "vinyl-source-stream": "2.0.0",
+    "del": "3.0.0",
+    "babel-core": "6.26.3",
+    "babelify": "8.0.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-plugin-transform-node-env-inline": "0.4.3",
+    "babel-plugin-transform-react-constant-elements": "6.23.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.13",
+    "babel-plugin-transform-react-jsx-self": "6.22.0",
+    "babel-plugin-transform-react-inline-elements": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-syntax-trailing-function-commas": "6.22.0",
+    "prop-types": "15.6.1",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "node-polyglot": "2.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.4.x",
+    "prop-types": "^15.6.x",
+    "node-polyglot": "^2.2.x"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "extensions": [
+            ".es"
+          ]
+        }
+      ]
+    ]
+  }
+}
