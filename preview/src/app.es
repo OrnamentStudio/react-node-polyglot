@@ -3,7 +3,7 @@ import Provider from '../../lib/provider';
 import withPolyglot from '../../lib/with_polyglot';
 
 
-const locale = {
+const appLocale = {
   dictionary: {
     hello: 'Halo %{name}',
   },
@@ -18,7 +18,7 @@ const Child = withPolyglot(({ t, locale }) => (
 
 const App = () => (
   <article>
-    <Provider locale={locale}>
+    <Provider locale={appLocale}>
       <h1>Node polyglot react</h1>
       <Child />
     </Provider>
