@@ -49,8 +49,8 @@
     "react-dom": "16.4.1"
   },
   "peerDependencies": {
-    "react": "^16.4.x",
-    "prop-types": "^15.6.x",
-    "node-polyglot": "^2.2.x"
+    "react": "^16.x.x",
+    "prop-types": "^15.x.x",
+    "node-polyglot": "^2.x.x"
   }
 }
