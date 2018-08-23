@@ -1,6 +1,6 @@
 {
   "name": "react-node-polyglot",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Node polyglot react component",
   "scripts": {
     "prepublishOnly": "npm run build",
