@@ -1,5 +1,6 @@
-# React Node Pyloglot
-React component to work with [node-polyglot](https://www.npmjs.com/package/node-polyglot)
+# React Node Pyloglot [![Build Status](https://travis-ci.org/OrnamentStudio/react-node-polyglot.svg?branch=master)](https://travis-ci.org/OrnamentStudio/react-node-polyglot)
+
+React component to use [node-polyglot](https://www.npmjs.com/package/node-polyglot)
 
 
 ## Install
@@ -8,19 +9,38 @@ React component to work with [node-polyglot](https://www.npmjs.com/package/node-
 npm install react-node-polyglot
 ```
 
-## Example Usage
+You also need to install peer dependencies by yourself
+```
+npm install node-polyglot // v2.x.x
+npm install react // v16.x.x
+npm install prop-types // v15.x.x
+```
+
+This module targets Node.js 8 or later and the latest version of Chrome, Firefox, and Safari. If you want support for older browsers use [Babel compiler](https://babeljs.io/).
+
+## Usage
 
 ```jsx
-import Provider from 'react-node-polyglot/lib/provider';
-import withPolyglot from 'react-node-polyglot/lib/with_polyglot';
+const { Provider, withPolyglot, useT, useLocale } = require('react-node-polyglot');
 
+
+const PolyglotHOC = withPolyglot(({ t, locale }) => {
+  // locale object that is passed to provider
+  return t('phrase');
+});
+
+const PolyglotHook = () => {
+  // locale object that is passed to provider
+  const locale = useLocale();
+
+  const t = useT();
+  return t('phrase');
+};
 
 const App = () => (
   <Provider locale={{ dictionary }}>
-    {withPolyglot(({ t, locale }) => {
-      // .. do smth with locale object
-      return t('phrase');  
-    })}
+    <PolyglotHOC />
+    <PolyglotHook />
   </Provider>
 );
 ```
