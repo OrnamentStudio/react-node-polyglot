@@ -40,8 +40,5 @@
     "react": "^16.x.x",
     "prop-types": "^15.x.x",
     "node-polyglot": "^2.x.x"
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "^18.0.1"
   }
 }
