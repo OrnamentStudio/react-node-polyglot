@@ -22,23 +22,23 @@
   },
   "homepage": "https://github.com/OrnamentStudio/react-node-polyglot#readme",
   "engines": {
-    "node": "^8.x.x"
+    "node": "^12.x.x"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "node-polyglot": "^2.4.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "peerDependencies": {
     "react": "^16.x.x",
-    "prop-types": "^15.x.x",
-    "node-polyglot": "^2.x.x"
+    "prop-types": "^15.x.x"
+  },
+  "dependencies": {
+    "node-polyglot": "^2.4.0"
   }
 }

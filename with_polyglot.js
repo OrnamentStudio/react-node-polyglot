@@ -6,7 +6,7 @@ const { forwardRef, createElement: e } = React;
 
 module.exports = (Component) => {
   const proxyComponent = (props, ref) => {
-    const children = polyglot => e(Component, { ...props, ...polyglot, ref });
+    const children = (polyglot) => e(Component, { ...props, ...polyglot, ref });
     return e(Consumer, null, children);
   };
 
